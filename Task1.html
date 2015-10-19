@@ -1,0 +1,37 @@
+   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+   <!-- Addition.html -->
+   <html xmlns = "http://www.w3.org/1999/xhtml">
+      <head>
+         <title>An Addition Program</title>
+         <script type = "text/javascript">
+            
+            var firstNumber,   // first string entered by user
+                secondNumber,  // second string entered by user
+                number1,       // first number to add
+                number2,       // second number to add
+                sum;           // sum of number1 and number2
+   
+            // read in first number from user as a string
+            firstNumber = 
+               window.prompt( "Enter radius: ", "0" );
+   
+            // convert numbers from strings to integers
+            number1 = parseInt( firstNumber ); 
+   
+            // add the numbers
+            sum = Math.PI * Math.pow(number1,2);
+            sum2 = 4 * Math.PI * Math.pow(number1,2);
+            sum3 = 4/3 * Math.PI * Math.pow(number1,3);
+   
+            // display the results
+            document.write( "<h1>The sum is " + sum + "</h1>" );
+            document.write( "<h1>The sum is " + sum2 + "</h1>" );
+            document.write( "<h1>The sum is " + sum3 + "</h1>" );
+            
+         </script>
+      </head>
+      <body>
+         <p>Click Refresh (or Reload) to run the script again</p>
+      </body>
+   </html>
