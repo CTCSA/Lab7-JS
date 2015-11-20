@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>An Addition Program</title>
+
+
+</head>
+<body>
+
+<h1>Mark Six Result</h1>
+
+<script type="text/javascript">
+	document.write("<table border=1>");
+
+        document.write( "<thead><tr><td>Subsript</td><td>Value</td></tr><tr>" );
+    for( i = 0 ; i < 6 ; i++){
+    	document.write( "<td>" +  i + "</td>" );
+    	document.write("<td>"+ Math.floor((Math.random() * 49) + 1)+"</td>");
+    	document.write( "</tr>" );
+
+    }
+    document.write("</table>");
+    </script>
+</body>
+</html>
