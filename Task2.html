@@ -3,7 +3,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>An Addition Program</title>
 
 
 </head>
@@ -12,14 +11,16 @@
 <h1>Mark Six Result</h1>
 
 <script type="text/javascript">
+	var Arr = new Array();
 	document.write("<table border=1>");
 
         document.write( "<thead><tr><td>Subsript</td><td>Value</td></tr><tr>" );
     for( i = 0 ; i < 6 ; i++){
+		Arr[i] = Math.floor((Math.random() * 49) + 1);
     	document.write( "<td>" +  i + "</td>" );
-    	document.write("<td>"+ Math.floor((Math.random() * 49) + 1)+"</td>");
+    	document.write("<td>"+ Arr[i]+"</td>");
     	document.write( "</tr>" );
-
+	
     }
     document.write("</table>");
     </script>
